@@ -24,6 +24,12 @@
   --blue-color: #2a08ee;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   max-width: 123rem;
@@ -157,7 +163,7 @@ header {
 
 .off-name h6,
 .our-officers  h2 {
-  color: var(--blue-color);
+  color: var(--main-color-white);
 }
 
 .our-officers  h2 {
@@ -166,7 +172,7 @@ header {
 
 /* Counter */
 .counter-holder {
-  background-image:
+  background:
     linear-gradient(
       to bottom,
       rgba(76, 77, 80, 0.52),
@@ -175,7 +181,13 @@ header {
     url(../images/Rotary-background.jpg);
   width: 100%;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   top: 5.2rem;
+}
+
+.counter-box {
+  margin: 0;
 }
 
 .counter {
@@ -201,8 +213,53 @@ header {
 
 /* President welcome address section */
 
-.pres-addr-text {
+.pres-addr {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-
+  font-size: 1.2rem;
 }
+
+.pres-addr-ul span {
+  color: var(--blue-color);
+}
+
+/* Our Goal Section */
+
+.our-goal {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(91, 121, 211, 0.52),
+    rgba(48, 8, 38, 0.73)
+  ),url("../images/Rotary-background.jpg") center no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 0;
+}
+
+.our-goal h1 {
+  font-family: var(--heading-font);
+  color: var(--main-color-white); 
+}
+
+.goal-img-box {
+  width: 8rem;
+  height: 8rem;
+}
+
+.per-goal h4 {
+  color: var(--main-color-white);  
+}
+
+/* News And Update Section */
+.news-update-holder .card {
+  width: 90%;
+  margin: 0 auto 3rem auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Footer */
